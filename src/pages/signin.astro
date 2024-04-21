@@ -3,7 +3,6 @@ import { app } from "../firebase/server";
 import { getAuth } from "firebase-admin/auth";
 import Layout from "../layouts/Layout.astro";
 
-/* Verificar si el usuario está autenticado */
 const auth = getAuth(app);
 if (Astro.cookies.has("session")) {
   const sessionCookie = Astro.cookies.get("session").value;

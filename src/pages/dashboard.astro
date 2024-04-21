@@ -12,7 +12,6 @@ if (!Astro.cookies.has("session")) {
 const sessionCookie = Astro.cookies.get("session").value;
 const decodedCookie = await auth.verifySessionCookie(sessionCookie);
 const user = await auth.getUser(decodedCookie.uid);
-console.log(user)
 
 if (!user) {
   return Astro.redirect("/signin");

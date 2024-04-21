@@ -1,3 +1,5 @@
+/// <reference path="../.astro/db-types.d.ts" />
+/// <reference path="../.astro/types.d.ts" />
 interface ImportMetaEnv {
     readonly FIREBASE_PRIVATE_KEY_ID: string;
     readonly FIREBASE_PRIVATE_KEY: string;
